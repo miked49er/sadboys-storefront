@@ -19,8 +19,8 @@ import { structuredData } from '../../core/SEO/Homepage/structuredData';
 
 import noPhotoImg from '../../images/no-photo.svg';
 
-import image2 from 'images/carousel-images/image2.jpg';
 import image1 from '../../images/carousel-images/image1.jpg';
+import image2 from '../../images/carousel-images/image2.jpg';
 import image3 from '../../images/carousel-images/image3.jpg';
 import image4 from '../../images/carousel-images/image4.jpg';
 
