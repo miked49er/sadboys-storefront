@@ -129,6 +129,10 @@ $heroHeight: calc(100vh - 56px);
     .slider-slide > img {
         object-fit: cover;
         width: 100%;
-        height: $heroHeight;
+        height: 500px;
+
+        @media (max-width: $small-screen) {
+            height: $heroHeight;
+        }
     }
 }
