@@ -65,40 +65,7 @@ const Page: React.FC<{
                     </Media>
             }
             <ProductsFeatured/>
-            {categoriesExist() && (
-                <div className="home-page__categories">
-                    <div className="container">
-                        <h3>Shop by category</h3>
-                        <div className="home-page__categories__list">
-                            {categories.edges.map(({node: category}) => (
-                                <div key={category.id}>
-                                    <Link
-                                        to={generateCategoryUrl(category.id, category.name)}
-                                        key={category.id}
-                                    >
-                                        <div
-                                            className={classNames(
-                                                'home-page__categories__list__image',
-                                                {
-                                                    'home-page__categories__list__image--no-photo': !category.backgroundImage,
-                                                }
-                                            )}
-                                            style={{
-                                                backgroundImage: `url(${
-                                                    category.backgroundImage
-                                                        ? category.backgroundImage.url
-                                                        : noPhotoImg
-                                                })`,
-                                            }}
-                                        />
-                                        <h3>{category.name}</h3>
-                                    </Link>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            )}
+
         </>
     );
 };
