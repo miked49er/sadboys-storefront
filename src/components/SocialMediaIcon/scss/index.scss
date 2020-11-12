@@ -1,15 +1,23 @@
 @import "../../../globalStyles/scss/variables.scss";
 
 .social-icon {
-  padding: $spacer $spacer / 2;
+  padding: 0 $spacer / 2;
 
   svg * {
     transition: 0.3s;
+    fill: $sadboys-blue;
+  }
+
+  svg {
+    display: block;
+    $icon-size: 50px;
+    width: $icon-size;
+    height: $icon-size;
   }
 
   &:hover {
     svg * {
-      fill: $turquoise;
+      fill: $sadboys-pink;
     }
   }
 }
