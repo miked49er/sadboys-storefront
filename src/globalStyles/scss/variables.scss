@@ -18,6 +18,18 @@ $blue-overlay: rgba($blue, 0.15);
 $autofillColor: rgb(250, 255, 189);
 $autofillColorSelected: rgb(232, 240, 254);
 
+// theme
+$toolbar-background: $black;
+$toolbar-border: $white;
+$toolbar-text-color: $white;
+$toolbar-active: $sadboys-blue;
+$toolbar-quantity-background: $sadboys-blue;
+$toolbar-quantity-text: $black;
+$toolbar-dropdown-label-background: lighten($black, 10%);
+$toolbar-dropdown-background: $sadboys-blue;
+$toolbar-dropdown-text: $black;
+$toolbar-dropdown-text-hover: $white;
+
 // typography
 $base-font-family: "Inter", sans-serif;
 $base-font-size: 1rem; // 16px
