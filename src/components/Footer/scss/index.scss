@@ -1,81 +1,103 @@
 @import "../../../globalStyles/scss/variables.scss";
 
+$footer-border: 2px solid $sadboys-pink;
+$footer-spacing: 25px;
 .footer {
-  &__favicons {
-    border-top: 1px solid $gray-light;
-    display: flex;
-    justify-content: center;
-  }
+    background-color: #000;
 
-  &__menu {
-    background-color: $gray-light;
-    padding: $spacer * 3 0 $spacer * 2;
+    &__logo {
+        margin: $footer-spacing auto 0;
+        padding-bottom: $footer-spacing;
+        width: 200px;
+        border-bottom: $footer-border;
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
+        svg {
+            display: block;
+            width: 100px;
+            height: auto;
+            margin: auto;
 
-      div {
-        &:not(:last-of-type) {
-          padding-right: $spacer * 3;
+            .logo-path {
+                fill: #fff;
+            }
         }
-      }
     }
 
-    &-section {
-      &-header {
-        font-weight: $bold-font-weight;
-        margin-bottom: $spacer;
-      }
+    &__favicons {
+        display: flex;
+        justify-content: center;
+        margin: $footer-spacing 0 !important;
+    }
 
-      &-content {
-        p {
-          font-weight: $bold-font-weight;
-          margin-bottom: $spacer;
-          font-size: $small-font-size;
-          color: $gray;
+    &__menu {
+        padding: $spacer * 3 0 $spacer * 2;
 
-          a {
-            text-decoration: none;
-            color: $gray;
-          }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+
+            div {
+                &:not(:last-of-type) {
+                    padding-right: $spacer * 3;
+                }
+            }
         }
-      }
-    }
-  }
 
-  &-nav {
-    background-color: $gray-light;
-    padding: $spacer * 3 0 $spacer * 2;
+        &-section {
+            &-header {
+                font-weight: $bold-font-weight;
+                margin-bottom: $spacer;
+            }
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
+            &-content {
+                p {
+                    font-weight: $bold-font-weight;
+                    margin-bottom: $spacer;
+                    font-size: $small-font-size;
+                    color: $gray;
 
-      div:not(:last-of-type) {
-        padding-right: $spacer * 3;
-      }
-    }
-
-    &__section {
-      &-header {
-        font-weight: $bold-font-weight;
-        margin-bottom: $spacer;
-        text-transform: uppercase;
-      }
-
-      &-content {
-        p {
-          margin-bottom: $spacer;
-          font-size: $small-font-size;
-          color: $gray;
-
-          a {
-            text-decoration: none;
-            color: $gray;
-          }
+                    a {
+                        text-decoration: none;
+                        color: $gray;
+                    }
+                }
+            }
         }
-      }
     }
-  }
+
+    &-nav {
+        width: 200px;
+        margin: auto;
+        padding: $footer-spacing;
+        border-top: $footer-border;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__section {
+            &-header {
+                margin-bottom: $spacer;
+                color: #fff;
+                font-family: $base-font-family;
+            }
+
+            &-content {
+                p {
+                    margin-bottom: $spacer;
+                    font-size: $small-font-size;
+                    color: $gray;
+
+                    a {
+                        text-decoration: none;
+                        color: $gray;
+                    }
+                }
+            }
+        }
+    }
 }
