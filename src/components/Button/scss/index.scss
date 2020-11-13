@@ -1,7 +1,7 @@
 @import "../../../globalStyles/scss/variables.scss";
 
 button.button {
-  background-color: $turquoise;
+  background-color: $button-primary;
   transform: $button-transform;
   padding: $button-padding;
   border: none;
@@ -19,7 +19,7 @@ button.button {
 
   > span {
     display: inline-block;
-    color: $white;
+    color: $button-primary-text;
     font-size: $button-font-size;
     text-transform: $button-text-transform;
     font-weight: $button-font-weight;
@@ -28,7 +28,7 @@ button.button {
   }
 
   &:hover {
-    background-color: $turquoise-dark;
+    background-color: $button-primary-dark;
   }
 
   &:active {
@@ -36,25 +36,25 @@ button.button {
   }
 
   &.secondary {
-    background-color: $white;
-    box-shadow: inset 0px 0px 0px 3px $blue;
-    border-left: 1px solid $blue;
-    border-right: 1px solid $blue;
+    background-color: $button-secondary-background;
+    box-shadow: inset 0px 0px 0px 3px $button-secondary;
+    border-left: 1px solid $button-secondary;
+    border-right: 1px solid $button-secondary;
 
     * {
-      color: $blue;
+      color: $button-secondary;
     }
 
     &:hover {
-      background-color: $blue;
+      background-color: $button-secondary;
 
       * {
-        color: $white;
+        color: $button-secondary-background;
       }
     }
 
     &:active {
-      background-color: $blue-dark;
+      background-color: $button-secondary-dark;
     }
   }
 
