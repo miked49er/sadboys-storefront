@@ -24,6 +24,15 @@ export const turquoiseTransparent = "rgba(6, 132, 123, 0.1)";
 export const white = "#fff";
 export const tabelGray = "#eaeaea";
 export const darkGreen = "#06847B";
+export const sadboysPink = "#FFBBEE";
+export const sadboysPinkDark = "#ff33cc";
+export const sadboysPinkLight = "#ffe6f9";
+export const sadboysPinkTransparent = "rgba(255, 230, 249, .1)";
+export const sadboysPinkTransparentDark = "rgba(255, 230, 249, .2)";
+export const sadboysBlue = "#9BF4FF";
+export const sadboysBlueDark = "#00e1ff";
+export const sadboysBlueLight = "#e6fcff";
+export const sadboysBlueTransparent = "rgba(230, 252, 255, .1)";
 
 // theme colors
 export const theme = {
@@ -44,15 +53,17 @@ export const theme = {
   listAttributeName: baseFontColorSemiTransparent,
   listBullet: darkGreen,
   overlay: overlayColor,
-  primary: turquoise,
-  primaryDark: turquoiseDark,
-  primaryLight: turquoiseLight,
-  primaryTransparent: turquoiseTransparent,
-  secondary: blue,
-  secondaryDark: blueDark,
-  secondaryLight: blueLight,
-  secondaryOverlay: blueOverlay,
-  secondaryOverlayDark: blueOverlayDark,
+  primary: sadboysBlue,
+  primaryDark: sadboysBlueDark,
+  primaryLight: sadboysBlueLight,
+  primaryText: black,
+  primaryTextHover: black,
+  primaryTransparent: sadboysBlueTransparent,
+  secondary: sadboysPink,
+  secondaryDark: sadboysPinkDark,
+  secondaryLight: sadboysPinkLight,
+  secondaryOverlay: sadboysPinkTransparent,
+  secondaryOverlayDark: sadboysPinkTransparentDark,
   success: green,
   tabTitle: darkGreen,
   tableDivider: tabelGray,

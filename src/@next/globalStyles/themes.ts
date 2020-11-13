@@ -19,9 +19,9 @@ export const defaultTheme = {
       primary: {
         activeBackground: C.theme.primaryDark,
         background: C.theme.primary,
-        color: C.white,
+        color: C.theme.primaryText,
         hoverBackground: C.theme.primaryDark,
-        hoverColor: C.white,
+        hoverColor: C.theme.primaryTextHover,
       },
       secondary: {
         activeBackground: C.theme.secondaryDark,
