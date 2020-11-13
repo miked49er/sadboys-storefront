@@ -1,6 +1,10 @@
 // colors
 $sadboys-blue: #9BF4FF;
+$sadboys-blue-dark: #00e1ff;
+$sadboys-blue-light: #e6fcff;
 $sadboys-pink: #FFBBEE;
+$sadboys-pink-dark: #ff33cc;
+$sadboys-pink-light: #ffe6f9;
 $base-font-color: #323232;
 $black: #000;
 $blue-dark: #190c4e;
@@ -29,6 +33,14 @@ $toolbar-dropdown-label-background: lighten($black, 10%);
 $toolbar-dropdown-background: $sadboys-blue;
 $toolbar-dropdown-text: $black;
 $toolbar-dropdown-text-hover: $white;
+$cart-text-color: $toolbar-text-color;
+$cart-quantity-color: $sadboys-pink;
+$button-primary: $sadboys-blue;
+$button-primary-dark: $sadboys-blue-dark;
+$button-primary-text: $black;
+$button-secondary: $sadboys-pink;
+$button-secondary-background: $white;
+$button-secondary-dark: $sadboys-pink-dark;
 
 // typography
 $base-font-family: "Inter", sans-serif;
