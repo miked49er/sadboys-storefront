@@ -45,7 +45,7 @@
 
   &__header {
     align-items: center;
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid $toolbar-border;
     display: flex;
     flex: 1;
     font-weight: $bold-font-weight;
@@ -56,9 +56,10 @@
     &-text {
       margin: 0 $spacer;
       text-align: center;
+      color: $toolbar-text-color;
 
       &-items {
-        color: $gray;
+        color: $cart-quantity-color;
       }
     }
 
@@ -70,7 +71,7 @@
       &:focus {
         svg {
           * {
-            fill: $turquoise;
+            fill: $toolbar-active;
           }
         }
       }
@@ -86,7 +87,7 @@
         display: flex;
         svg {
           * {
-            fill: $turquoise;
+            fill: $toolbar-active;
           }
         }
       }
