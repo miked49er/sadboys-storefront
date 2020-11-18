@@ -24,6 +24,7 @@ $autofillColorSelected: rgb(232, 240, 254);
 
 // theme
 $toolbar-background: $black;
+$toolbar-lighter: lighten($toolbar-background, 20%);
 $toolbar-border: $white;
 $toolbar-text-color: $white;
 $toolbar-active: $sadboys-blue;
@@ -37,7 +38,7 @@ $cart-text-color: $toolbar-text-color;
 $cart-quantity-color: $sadboys-pink;
 $search-input-background: lighten($toolbar-background, 10%);
 $search-product-background: $toolbar-background;
-$search-product-hover: lighten($search-product-background, 20%);
+$search-product-hover: $toolbar-lighter;
 $button-primary: $sadboys-blue;
 $button-primary-dark: $sadboys-blue-dark;
 $button-primary-text: $black;
