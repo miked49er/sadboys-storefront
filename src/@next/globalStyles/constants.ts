@@ -65,10 +65,10 @@ export const theme = {
   secondaryOverlay: sadboysPinkTransparent,
   secondaryOverlayDark: sadboysPinkTransparentDark,
   success: green,
-  tabTitle: darkGreen,
+  tabTitle: sadboysPink,
   tableDivider: tabelGray,
   tabsBorder: baseFontColorTransparent,
-  thumbnailBorder: darkGreen,
+  thumbnailBorder: sadboysPink,
   white,
 };
 
