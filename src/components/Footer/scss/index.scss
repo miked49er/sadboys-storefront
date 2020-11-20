@@ -27,6 +27,10 @@ $footer-spacing: 25px;
         display: flex;
         justify-content: center;
         margin: $footer-spacing 0 !important;
+
+        &.container {
+            width: auto !important;
+        }
     }
 
     &__menu {
@@ -77,6 +81,7 @@ $footer-spacing: 25px;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            width: auto !important;
         }
 
         &__section {
@@ -98,6 +103,32 @@ $footer-spacing: 25px;
                     }
                 }
             }
+        }
+    }
+
+    @media (min-width: $medium-screen) {
+        display: grid;
+        grid: 'logo nav social' auto / 1fr 2fr 1fr;
+
+        &__logo {
+            grid-area: logo;
+            border-bottom: 0;
+        }
+
+        &-nav {
+            grid-area: nav;
+            border-top: 0;
+            width: 100%;
+
+            .container {
+                align-items: flex-start;
+                padding: 0;
+            }
+        }
+
+        &__favicons {
+            grid-area: social;
+            align-items: center;
         }
     }
 }
