@@ -15,12 +15,7 @@ export const PROVIDERS = {
     label: "Stripe",
   },
 };
-export const STATIC_PAGES = [
-  {
-    label: "About",
-    url: generatePageUrl("about"),
-  },
-];
+export const STATIC_PAGES = [];
 export const SOCIAL_MEDIA = [
   {
     ariaLabel: "facebook",
@@ -46,9 +41,9 @@ export const SOCIAL_MEDIA = [
 export const META_DEFAULTS = {
   custom: [],
   description:
-    "Open-source PWA storefront built with Saleor's e-commerce GraphQL API. Written with React and TypeScript.",
+    "Sadboys Apparel Storefront",
   image: `${window.location.origin}${require("../images/logo.svg")}`,
-  title: "Demo PWA Storefront – Saleor Commerce",
+  title: "Sadboys LLC",
   type: "website",
   url: window.location.origin,
 };
