@@ -109,6 +109,8 @@ $footer-spacing: 25px;
     @media (min-width: $medium-screen) {
         display: grid;
         grid: 'logo nav social' auto / 1fr 2fr 1fr;
+        width: 100%;
+        max-height: 150px;
 
         &__logo {
             grid-area: logo;
