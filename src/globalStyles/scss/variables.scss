@@ -108,6 +108,7 @@ $product-item-price-font-weight: $bold-font-weight;
 $product-item-price-margin: $spacer 0 0;
 
 // breakpoints
+$large-screen: 1280px;
 $medium-screen: 992px;
 $small-screen: 540px;
 
@@ -123,6 +124,7 @@ $modal-width: 555px;
 $modal-min-height: 455px;
 
 :export {
+  largeScreen: $large-screen;
   mediumScreen: $medium-screen;
   smallScreen: $small-screen;
 }
