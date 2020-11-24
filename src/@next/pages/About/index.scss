@@ -1,0 +1,92 @@
+@import "../../../globalStyles/scss/variables.scss";
+
+.about-sadboys {
+    background-color: $sadboys-pink;
+    padding-bottom: 40px;
+
+    p {
+        transition: all 400ms ease-in-out;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    @media(min-width: $small-screen) {
+        p {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    @media(min-width: $medium-screen) {
+        p {
+            width: 40%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.about-team {
+    #team-title {
+        position: relative;
+        left: calc(100vw - 300px);
+    }
+
+    .about-team-list {
+        display: grid;
+        grid: auto / 1fr;
+        grid-gap: 30px 0;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        transition: all 400ms ease-in-out;
+
+        .player-profile {
+            transition: all 400ms ease-in-out;
+            width: 100%;
+        }
+
+        @media(min-width: $small-screen) {
+            width: 70%
+        }
+
+        @media(min-width: $medium-screen) {
+            width: 60%;
+            margin: 30px auto 0;
+            grid: auto / 1fr 1fr;
+            grid-gap: 30px 50px;
+        }
+
+        @media(min-width: $large-screen) {
+            width: 80%;
+            grid: auto / 1fr 1fr 1fr 1fr;
+        }
+    }
+
+}
+
+.about-banner {
+    margin: -40px 0 20px;
+
+    .title-banner {
+        filter: drop-shadow(0 4px 4px hsla(0, 0%, 0%, 0.2));
+    }
+}
+
+.image-border {
+    fill: none;
+    stroke: #9BF4FF;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+}
+
+.info-panel {
+    fill: #FFBBEE;
+    stroke: #FFBBEE;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+
+    text {
+        font-size: 12;
+    }
+}
+
