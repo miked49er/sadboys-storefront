@@ -1,0 +1,10 @@
+.lookbook-wrapper {
+    display: grid;
+    grid: auto / 1fr;
+    grid-gap: 40px 0;
+    margin-bottom: 50px;
+
+    img {
+        width: 100%;
+    }
+}
