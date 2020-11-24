@@ -16,3 +16,4 @@ export const passwordResetUrl = `${baseUrl}reset-password/`;
 export const checkoutUrl = `${baseUrl}checkout/`;
 export const orderFinalizedUrl = `${baseUrl}order-finalized/`;
 export const aboutUrl = `${baseUrl}about/`;
+export const lookBookUrl = `${baseUrl}lookbook/`;
