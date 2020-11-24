@@ -1,13 +1,11 @@
 import { smallScreen } from '@styles/constants';
+import * as React from 'react';
+// @ts-ignore
 import { heroHeight } from './scss/index.scss';
 
-import classNames from 'classnames';
-import * as React from 'react';
-import { Link } from 'react-router-dom';
-
+import { DropCard } from '@components/organisms';
 import Media from 'react-media';
 import { Carousel, ProductsFeatured } from '../../components';
-import { generateCategoryUrl } from '../../core/utils';
 
 import {
     ProductsList_categories,
@@ -16,8 +14,6 @@ import {
 } from './gqlTypes/ProductsList';
 
 import { structuredData } from '../../core/SEO/Homepage/structuredData';
-
-import noPhotoImg from '../../images/no-photo.svg';
 
 import image1 from '../../images/carousel-images/image1.jpg';
 import image2 from '../../images/carousel-images/image2.jpg';
@@ -30,10 +26,6 @@ const Page: React.FC<{
     backgroundImage: ProductsList_shop_homepageCollection_backgroundImage;
     shop: ProductsList_shop;
 }> = ({loading, categories, backgroundImage, shop}) => {
-    const categoriesExist = () => {
-        return categories && categories.edges && categories.edges.length > 0;
-    };
-
     return (
         <>
             <script className="structured-data-list" type="application/ld+json">
@@ -64,6 +56,9 @@ const Page: React.FC<{
                         }
                     </Media>
             }
+            <div className="content-wrapper">
+                <DropCard/>
+            </div>
             <ProductsFeatured/>
 
         </>
