@@ -3,7 +3,7 @@ import * as React from 'react';
 // @ts-ignore
 import { heroHeight } from './scss/index.scss';
 
-import { DropCard } from '@components/organisms';
+import { DropCard, VideoCard } from '@components/organisms';
 import Media from 'react-media';
 import { Carousel, ProductsFeatured } from '../../components';
 
@@ -58,6 +58,7 @@ const Page: React.FC<{
             }
             <div className="content-wrapper">
                 <DropCard/>
+                <VideoCard url="https://www.youtube.com/embed/tcgJjCVIF1k"/>
             </div>
             <ProductsFeatured/>
 
