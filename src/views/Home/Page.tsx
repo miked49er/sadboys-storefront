@@ -1,7 +1,7 @@
 import { smallScreen } from '@styles/constants';
 import * as React from 'react';
 // @ts-ignore
-import { heroHeight } from './scss/index.scss';
+import { carouselHeight, heroHeight } from './scss/index.scss';
 
 import { DropCard, VideoCard } from '@components/organisms';
 import Media from 'react-media';
@@ -45,7 +45,7 @@ const Page: React.FC<{
                                 slidesToScroll={1}
                                 autoplay={true}
                                 wrapAround={true}
-                                height={matches ? heroHeight : '500px'}
+                                height={matches ? heroHeight : carouselHeight}
                                 withoutControls={true}
                             >
                                 <img src={image1} alt="Sadboys 1"/>
